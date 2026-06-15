@@ -3,9 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/portfolio";
-import { Button } from "@/components/ui/Button";
 import { ArrowRight, Sparkles, Download } from "lucide-react";
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaAws, FaDocker, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
 
 export const Hero = () => {
@@ -145,6 +144,12 @@ export const Hero = () => {
             </a>
             <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-white/10 border border-white/20 rounded-full text-[#0a66c2] hover:bg-white/20 hover:scale-110 transition-all shadow-[0_0_15px_rgba(10,102,194,0.2)] hover:shadow-[0_0_25px_rgba(10,102,194,0.4)]">
               <FaLinkedin size={28} />
+            </a>
+            <a href={personalInfo.twitter} target="_blank" rel="noreferrer" className="p-3 bg-white/10 border border-white/20 rounded-full text-[#1DA1F2] hover:bg-white/20 hover:scale-110 transition-all shadow-[0_0_15px_rgba(29,161,242,0.2)] hover:shadow-[0_0_25px_rgba(29,161,242,0.4)]">
+              <FaTwitter size={28} />
+            </a>
+            <a href={personalInfo.instagram} target="_blank" rel="noreferrer" className="p-3 bg-white/10 border border-white/20 rounded-full text-[#E1306C] hover:bg-white/20 hover:scale-110 transition-all shadow-[0_0_15px_rgba(225,48,108,0.2)] hover:shadow-[0_0_25px_rgba(225,48,108,0.4)]">
+              <FaInstagram size={28} />
             </a>
           </motion.div>
 

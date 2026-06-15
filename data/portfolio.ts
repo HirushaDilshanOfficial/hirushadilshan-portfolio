@@ -10,8 +10,8 @@ export const personalInfo = {
   availability: "Looking for Internship",
   github: "https://github.com/HirushaDilshanOfficial",
   linkedin: "https://www.linkedin.com/in/hirusha-dilshan/",
-  instagram: "https://instagram.com/", // Add your instagram link here 
-  twitter: "https://twitter.com/hirushadilshan",
+  instagram: "https://www.instagram.com/hirusha_dilshan_official?igsh=MTlmbm1lcmhkeGU1bA==",
+  twitter: "https://x.com/Hirushaofficial",
   resume: "/Hirusha_Dilshan_Resume.pdf",
 };
 
@@ -208,35 +208,27 @@ export const projects = [
 
 export const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "CTO at TechNova Labs",
-    avatar: "SC",
-    text: "Alex is an exceptional engineer who thinks in systems. He doesn't just write code — he architects solutions. His ability to translate complex business requirements into elegant technical implementations is truly rare. He's the kind of engineer every CTO wants on their team.",
+    name: "Wethmi WIjethilaka",
+    role: "BSc (Hons) in Data Science Undergraduate, SLIIT",
+    avatar: "WW",
+    text: "I had the opportunity to work with Hirusha on university projects. He is a responsible and dedicated individual who consistently ensures that tasks are completed on time. His problem-solving skills and team collaboration make him a reliable person to work with. I would recommend him for any academic or software development-related work.",
     rating: 5,
     color: "#6366f1",
   },
   {
-    name: "Marcus Johnson",
-    role: "CEO at CloudScale Inc.",
-    avatar: "MJ",
-    text: "Working with Alex was transformative for our product. He delivered our microservices migration 2 weeks early, and the quality was outstanding. More importantly, he coached our junior team to become 10x more effective. He understands the business side too — not just the code.",
+    name: "Umangi Anjalika",
+    role: "BSc (Hons) in Data Science Undergraduate, SLIIT",
+    avatar: "UA",
+    text: "I had the pleasure of working with Hirusha on our university project, PETVERSE, from July to November 2025. He proved to be a dedicated and reliable team member who made meaningful contributions to the project's development and integration. Hirusha consistently demonstrated a strong work ethic and attention to detail, ensuring his tasks were completed on time and to a high standard. He was equally strong on the human side, approachable, supportive, and always willing to help teammates through challenges. His positive attitude helped maintain team morale during the more demanding phases of the project. What stood out most was his sense of responsibility. He took full ownership of his tasks, followed through on every commitment, and built genuine trust within the team. His reliability made collaboration smooth and kept the project on track. The successful completion of PETVERSE reflects our team's collective effort, and Hirusha's contribution played a key role in that outcome. I would confidently recommend him and would welcome the opportunity to work with him again.",
     rating: 5,
     color: "#22d3ee",
   },
   {
-    name: "Priya Patel",
-    role: "VP Engineering at StartupXYZ",
-    avatar: "PP",
-    text: "Alex built our entire MVP infrastructure from scratch in 3 months. That work directly contributed to us closing our seed round. He's proactive, communicates clearly with all stakeholders — technical and non-technical — and consistently over-delivers.",
+    name: "Dilshara Thilakarathne",
+    role: "BSc (Hons) in Software Engineering Undergraduate, SLIIT",
+    avatar: "DT",
+    text: "I had the opportunity to work with Hirusha on university group projects and truly appreciate his teamwork and collaborative approach. He communicates ideas clearly, stays calm under pressure, and contributes effectively to team discussions. He is responsible with his tasks and consistently delivers work on time. His adaptability, patience, and willingness to support others make him a valuable team member in group settings. Overall, I found him reliable, cooperative, and easy to work with, and I would confidently recommend him for academic or software development-related opportunities.",
     rating: 5,
     color: "#f59e0b",
-  },
-  {
-    name: "David Kim",
-    role: "Product Manager at TechNova Labs",
-    avatar: "DK",
-    text: "Alex has that rare ability to bridge engineering and product. He always asks 'why' before jumping to 'how', which leads to better solutions. His features have directly driven a 40% increase in our core engagement metrics.",
-    rating: 5,
-    color: "#10b981",
   },
 ];

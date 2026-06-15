@@ -15,24 +15,60 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Hirusha Dilshan",
+  title: "Hirusha Dilshan | IT Undergraduate & DevOps Enthusiast",
   description:
-    "IT Undergraduate at SLIIT | DevOps Enthusiast specializing in scalable cloud architecture and robust infrastructure.",
+    "Portfolio of Hirusha Dilshan, an IT Undergraduate at SLIIT specializing in scalable cloud architecture, DevOps, and robust infrastructure.",
   keywords: [
     "Hirusha Dilshan",
-    "Undergraduate",
+    "Hirusha",
+    "Dilshan",
+    "Portfolio",
     "SLIIT",
     "DevOps",
-    "IT Student",
+    "Software Engineering",
+    "IT Undergraduate",
+    "Sri Lanka",
+    "Cloud Architecture"
   ],
   authors: [{ name: "Hirusha Dilshan" }],
+  creator: "Hirusha Dilshan",
   openGraph: {
-    title: "Hirusha Dilshan",
-    description:
-      "IT Undergraduate at SLIIT | DevOps Enthusiast",
+    title: "Hirusha Dilshan | Portfolio",
+    description: "IT Undergraduate at SLIIT | DevOps Enthusiast building scalable infrastructure.",
+    url: "https://hirushadilshan.com", // Replace with actual domain when hosting
+    siteName: "Hirusha Dilshan Portfolio",
+    images: [
+      {
+        url: "/profileImage.jpeg", 
+        width: 1200,
+        height: 630,
+        alt: "Hirusha Dilshan - Portfolio",
+      },
+    ],
+    locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hirusha Dilshan | Portfolio",
+    description: "IT Undergraduate at SLIIT | DevOps Enthusiast building scalable infrastructure.",
+    creator: "@hirushadilshan",
+    images: ["/profileImage.jpeg"], 
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
+
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -45,6 +81,7 @@ export default function RootLayout({
         className={`${inter.variable} ${syne.variable} bg-[#020817] text-slate-100 antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { personalInfo } from "@/data/portfolio";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
@@ -63,8 +62,13 @@ export const Navbar = () => {
         
         {/* Right: Desktop Let's Talk Button */}
         <div className="hidden md:flex flex-[1] justify-end items-center">
-          <Button asChild variant="outline" size="sm" className="hidden lg:inline-flex">
-            <a href="#contact">Let&apos;s Talk</a>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="hidden lg:inline-flex"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Let&apos;s Talk
           </Button>
         </div>
 
@@ -99,8 +103,14 @@ export const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button asChild className="w-full justify-center">
-                <a href="#contact">Let&apos;s Talk</a>
+              <Button 
+                className="w-full justify-center"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Let&apos;s Talk
               </Button>
             </div>
           </motion.div>

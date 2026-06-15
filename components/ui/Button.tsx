@@ -10,7 +10,6 @@ interface ButtonProps extends HTMLMotionProps<"button"> {
   icon?: LucideIcon;
   iconPosition?: "left" | "right";
   children: React.ReactNode;
-  asChild?: boolean;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -22,7 +21,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       icon: Icon,
       iconPosition = "left",
       children,
-      asChild,
       ...props
     },
     ref

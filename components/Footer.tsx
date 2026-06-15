@@ -2,13 +2,9 @@
 
 import React from "react";
 import { personalInfo } from "@/data/portfolio";
-import { ArrowUp } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="bg-[#020817] border-t border-white/10 pt-16 pb-8 relative overflow-hidden">
@@ -25,13 +21,6 @@ export const Footer = () => {
               Currently available for freelance work and full-time opportunities.
             </p>
           </div>
-
-          <button 
-            onClick={scrollToTop}
-            className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:text-white transition-colors group"
-          >
-            <ArrowUp className="group-hover:-translate-y-1 transition-transform" />
-          </button>
         </div>
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
