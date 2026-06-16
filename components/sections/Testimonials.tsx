@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { testimonials } from "@/data/portfolio";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { Quote, Star } from "lucide-react";
+import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface TestimonialType {
   name: string;
@@ -70,6 +70,23 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: TestimonialType,
 };
 
 export const Testimonials = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 4;
+  const totalPages = Math.ceil(testimonials.length / itemsPerPage);
+
+  const nextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  const currentTestimonials = testimonials.slice(
+    currentPage * itemsPerPage,
+    (currentPage + 1) * itemsPerPage
+  );
+
   return (
     <section id="testimonials" className="py-24 relative overflow-hidden bg-slate-900/30">
       <div className="container mx-auto px-6 relative z-10">
@@ -79,11 +96,42 @@ export const Testimonials = () => {
           align="center"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} testimonial={testimonial} index={index} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 min-h-[600px]">
+          {currentTestimonials.map((testimonial, index) => (
+            <TestimonialCard key={currentPage * itemsPerPage + index} testimonial={testimonial} index={index} />
           ))}
         </div>
+
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center gap-6 mt-12">
+            <button 
+              onClick={prevPage}
+              className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 text-white transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
+              aria-label="Previous testimonials"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <div className="flex gap-2">
+              {[...Array(totalPages)].map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentPage(i)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    currentPage === i ? "bg-indigo-500 scale-125" : "bg-white/20 hover:bg-white/40"
+                  }`}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
+            <button 
+              onClick={nextPage}
+              className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 text-white transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
+              aria-label="Next testimonials"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
