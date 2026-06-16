@@ -55,7 +55,11 @@ export const Navbar = () => {
               href={link.href}
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById(link.href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' });
+                const el = document.getElementById(link.href.replace('#', ''));
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                  window.scrollTo({ top: y, behavior: 'smooth' });
+                }
               }}
               className="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group"
             >
@@ -71,7 +75,13 @@ export const Navbar = () => {
             variant="outline" 
             size="sm" 
             className="hidden lg:inline-flex"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => {
+              const el = document.getElementById('contact');
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
+            }}
           >
             Let&apos;s Talk
           </Button>
@@ -105,7 +115,13 @@ export const Navbar = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     setIsMobileMenuOpen(false);
-                    document.getElementById(link.href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => {
+                      const el = document.getElementById(link.href.replace('#', ''));
+                      if (el) {
+                        const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                      }
+                    }, 100);
                   }}
                   className="text-lg font-medium text-slate-300 hover:text-white transition-colors"
                 >
@@ -116,7 +132,13 @@ export const Navbar = () => {
                 className="w-full justify-center"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  setTimeout(() => {
+                    const el = document.getElementById('contact');
+                    if (el) {
+                      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                      window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                  }, 100);
                 }}
               >
                 Let&apos;s Talk
