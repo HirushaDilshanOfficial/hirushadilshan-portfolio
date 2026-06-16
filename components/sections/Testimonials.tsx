@@ -18,7 +18,7 @@ interface TestimonialType {
 
 const TestimonialCard = ({ testimonial, index }: { testimonial: TestimonialType, index: number }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const maxLength = 200;
+  const maxLength = 150;
   const isLongText = testimonial.text.length > maxLength;
   const displayText = isExpanded ? testimonial.text : (isLongText ? `${testimonial.text.substring(0, maxLength)}...` : testimonial.text);
 
@@ -47,7 +47,7 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: TestimonialType,
               onClick={() => setIsExpanded(!isExpanded)} 
               className="ml-2 text-indigo-400 hover:text-indigo-300 font-medium text-sm not-italic focus:outline-none"
             >
-              {isExpanded ? "Read less" : "Read more"}
+              {isExpanded ? "See less" : "See more"}
             </button>
           )}
         </div>

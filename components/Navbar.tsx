@@ -53,6 +53,10 @@ export const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById(link.href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group"
             >
               {link.name}
@@ -98,7 +102,11 @@ export const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
+                    document.getElementById(link.href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="text-lg font-medium text-slate-300 hover:text-white transition-colors"
                 >
                   {link.name}
