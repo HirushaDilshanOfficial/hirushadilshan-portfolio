@@ -224,11 +224,27 @@ export const testimonials = [
     color: "#22d3ee",
   },
   {
+    name: "Yuwani Yasmada",
+    role: "Data Science",
+    avatar: "YY",
+    text: "What stands out most about Hirusha is his dedication and work ethic. I had the opportunity to work with him on the PetVerse project, where he consistently showed genuine care in everything he did. He always strives for quality rather than simply getting things done. A talented developer and an even better teammate.",
+    rating: 5,
+    color: "#10b981",
+  },
+  {
     name: "Dilshara Thilakarathne",
     role: "BSc (Hons) in Software Engineering Undergraduate, SLIIT",
     avatar: "DT",
     text: "I had the opportunity to work with Hirusha on university group projects and truly appreciate his teamwork and collaborative approach. He communicates ideas clearly, stays calm under pressure, and contributes effectively to team discussions. He is responsible with his tasks and consistently delivers work on time. His adaptability, patience, and willingness to support others make him a valuable team member in group settings. Overall, I found him reliable, cooperative, and easy to work with, and I would confidently recommend him for academic or software development-related opportunities.",
     rating: 5,
     color: "#f59e0b",
+  },
+  {
+    name: "Dushani Naveendhya",
+    role: "Software Engineer",
+    avatar: "DN",
+    text: "Working with him has been a great experience. He has a strong understanding of IT concepts and consistently demonstrates excellent problem-solving and analytical skills. Beyond his technical knowledge, he is always willing to assist others with technical challenges and provide guidance when needed. His dedication to learning, teamwork, and supportive nature make him a valuable peer and a promising IT professional.",
+    rating: 5,
+    color: "#8b5cf6",
   },
 ];
