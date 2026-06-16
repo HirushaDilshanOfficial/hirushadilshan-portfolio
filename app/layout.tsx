@@ -69,6 +69,7 @@ export const metadata: Metadata = {
 };
 
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({
   children,
@@ -82,6 +83,7 @@ export default function RootLayout({
       >
         {children}
         <Analytics />
+        <GoogleAnalytics gaId="G-FBNND5WGHM" />
       </body>
     </html>
   );
