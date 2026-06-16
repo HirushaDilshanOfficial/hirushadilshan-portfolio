@@ -71,7 +71,7 @@ const TestimonialCard = ({ testimonial, index }: { testimonial: TestimonialType,
 
 export const Testimonials = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 2;
+  const itemsPerPage = 4;
   const totalPages = Math.ceil(testimonials.length / itemsPerPage);
 
   const nextPage = () => {
