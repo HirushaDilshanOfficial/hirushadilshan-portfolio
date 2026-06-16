@@ -15,6 +15,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hirushadilshan.com"),
   title: "Hirusha Dilshan | IT Undergraduate & DevOps Enthusiast",
   description:
     "Portfolio of Hirusha Dilshan, an IT Undergraduate at SLIIT specializing in scalable cloud architecture, DevOps, and robust infrastructure.",
