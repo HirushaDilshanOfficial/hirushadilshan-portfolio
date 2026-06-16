@@ -225,7 +225,7 @@ export const testimonials = [
   },
   {
     name: "Yuwani Yasmada",
-    role: "Data Science",
+    role: "BSc (Hons) in Data Science Undergraduate, SLIIT",
     avatar: "YY",
     text: "What stands out most about Hirusha is his dedication and work ethic. I had the opportunity to work with him on the PetVerse project, where he consistently showed genuine care in everything he did. He always strives for quality rather than simply getting things done. A talented developer and an even better teammate.",
     rating: 5,
@@ -241,7 +241,7 @@ export const testimonials = [
   },
   {
     name: "Dushani Naveendhya",
-    role: "Software Engineer",
+    role: "BSc (Hons) in Software Engineering Undergraduate, SLIIT",
     avatar: "DN",
     text: "Working with him has been a great experience. He has a strong understanding of IT concepts and consistently demonstrates excellent problem-solving and analytical skills. Beyond his technical knowledge, he is always willing to assist others with technical challenges and provide guidance when needed. His dedication to learning, teamwork, and supportive nature make him a valuable peer and a promising IT professional.",
     rating: 5,
