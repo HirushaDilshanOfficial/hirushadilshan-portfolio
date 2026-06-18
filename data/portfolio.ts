@@ -247,4 +247,12 @@ export const testimonials = [
     rating: 5,
     color: "#8b5cf6",
   },
+  {
+    name: "Amasha Bollagala",
+    role: "BSc (Hons) in Software Engineering Undergraduate, SLIIT",
+    avatar: "AB",
+    text: "It has been a pleasure working with him. His collaborative mindset and willingness to support others make him an excellent team member. He is always ready to assist colleagues by sharing his knowledge and helping to resolve technical challenges. Along with his commitment to continuous learning, he demonstrates strong analytical and problem-solving skills in his work. His solid understanding of IT concepts and dedication to professional growth make him a highly capable and well-rounded IT professional.",
+    rating: 5,
+    color: "#ec4899",
+  },
 ];
